@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./second_task.css">
+    <title>second Task</title>
+    <style>
+        .none-bullet-list{
+            list-style-type: none;
+        }
+        #linksbar li > a{
+            color: red;
+            background-color: pink;
+            text-decoration: none;
+        }
+        #linksbar li > a:hover{
+            color: pink;
+            background-color: red;
+        }
+        #content h2 + p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #content h2 + p::after{
+            content: "Read this";
+            color: yellow;
+        }
+        #loginform{
+            border-style: dashed;
+            border-width: 2;
+            color: rgb(20, 70, 60);
+        }
+        [type="text"]{
+            background-color: yellow;
+        }
+        [type="text"]:focus{
+            background-color: white;
+        }
+        .tabled-border{
+            display: table-cell;
+            padding: 5;
+            border-width: 5;
+            border-style: solid;
+            border-color: black;
+        }
+        #aboutus{
+            color: red !important;
+        }
+        #content > #aboutus{
+            color: yellow;
+        }
+        #header{
+            text-align: center;
+            font-size:xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Child of div</h1>
+    </div>
+
+    <div id="header">
+        The Header Id
+    </div>
+    
+    <span id="linksbar" style="width: 25%;background-color: gray;float: left;">
+        <div id="loginform">
+            <form>
+                <label for="user-name">user-name</label>
+                <input type="text" name="user-name">
+                <br>
+                <label for="password">password</label>
+                <input type="password" name="password">
+                <br>
+                <input type="checkbox" name="remember-me">
+                <label for="remember-me">remember-me</label>
+                <br>
+                <input type="submit" value="login">
+            </form>
+        </div>
+        
+        <ul>
+           <li>
+            <a href="https://www.google.com/">google</a>
+           </li>
+           <li>
+            <a href="https://www.facebook.com/?locale=ar_AR">facebook</a>
+            </li>
+           <li>
+            <a href="https://github.com/">github</a>
+           </li> 
+        </ul>
+    </span>
+    
+    <span id="content" style="width: 75%;height: 70%; background-color: pink;float: right;">
+        <h2>about us</h2>
+        <p id="aboutus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, temporibus ab error odit necessitatibus eum, totam soluta libero laboriosam saepe nobis delectus itaque repellendus dolorum cum excepturi id aut magnam.
+        Nulla quibusdam asperiores aspernatur fuga, error dolorem ipsa incidunt enim odit ab veritatis tenetur in earum atque adipisci ex sed deserunt molestiae? Magnam fugiat eos reiciendis atque voluptate ipsam totam.</p>
+
+        <div id="titles">
+            <span class="tabled-border">titel1</span>
+            <span class="tabled-border">titel1</span>
+            <span class="tabled-border">titel1</span>
+        </div>
+        
+
+    </span>
+
+    <ul class="none-bullet-list">
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* q1 */
+p {
+    color: red;
+}
+
+/* q2 */
+p, div {
+
+}
+
+/* q3 */
+#myDiv > .MinClass {
+
+}
+
+/* q4 */
+div p{
+    color: red;
+}
+
+/* q5 */
+[type="text"].myClass{
+
+}
+
+/* q6 */
+div + span {
+
+}
+
+/* q7 */
+p.myClass{
+
+}
+
+/* q8 */
+#myDiv{
+
+}

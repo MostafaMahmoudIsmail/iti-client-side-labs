@@ -1,0 +1,32 @@
+#addBtn {
+  background: green;
+  color: white;
+}
+#removeBtn {
+  background: red;
+  color: white;
+}
+#linkedlistShow {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.node {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

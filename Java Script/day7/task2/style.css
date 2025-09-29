@@ -1,0 +1,45 @@
+#linkedList {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  gap: 15px;
+}
+.Node {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: orange;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+}
+
+.in {
+  transform: scale(0);
+  animation-name: popIn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+.out {
+  animation-name: shrinkOut;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrinkOut {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
